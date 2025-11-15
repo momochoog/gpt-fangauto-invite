@@ -1,0 +1,11 @@
+# 克隆你 fork 后的仓库
+git clone https://github.com/你的用户名/gpt-auto-invite.git
+cd gpt-auto-invite
+
+# 把 cloud 里的 compose 文件复制到根目录
+cp cloud/docker-compose.yml ./docker-compose.yml
+
+# 保存并推送
+git add docker-compose.yml
+git commit -m "chore: add root-level docker-compose for Railway"
+git push
